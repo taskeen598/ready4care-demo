@@ -1,0 +1,23 @@
+body, h3 {
+  font-family: "Cambria", Times, serif;
+}
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.center-stepper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(238, 233, 226);
+}
+
+.form-content {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+}

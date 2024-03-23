@@ -1,0 +1,7 @@
+.first-row,
+.second-row,
+.third-row {
+  display: flex;
+  gap: 10rem;
+  /* width: 100%; */
+}
