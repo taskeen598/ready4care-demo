@@ -7,7 +7,7 @@ import { Stepper, StepLabel, Step } from '@mui/material';
 import { multiStepContext } from './StepContext';
 import DisplayData from './components/DisplayData';
 import TestDoc from './components/TestDoc';
-
+import logo from "./new.png"
 function App() {
 	const { currentStep, finalData } = useContext(multiStepContext);
 
@@ -47,9 +47,13 @@ function App() {
 		<div className="App">
 			<header className="App-header">
 				<div className="center-stepper">
-					<h3 style={{ color: 'blue', paddingTop: "3%", fontSize: "40px" }}>Ready For Life</h3>
+					{/* <h3 style={{ color: 'blue', paddingTop: "3%", fontSize: "40px" }}>Ready For Life</h3> */}
+					{/* <img src="../public/logo.png" alt="Italian Trulli" /> */}
+					{/* <img src={logo} alt="Logo" /> */}
+					<img src={logo} alt="Logo" style={{ height: '100px', width: '200px', marginTop: "2rem" }} />
+
 					<Stepper style={{ width: '20%', paddingTop: "3%" }} activeStep={currentStep - 1} orientation="horizontal">
-						<Step>
+						<Step >
 							<StepLabel></StepLabel>
 						</Step>
 						<Step>
@@ -62,7 +66,7 @@ function App() {
 					<div className='form-content' style={{ marginTop: "2%" }}>
 						{showStep(currentStep)}
 					</div>
-					<TestDoc />
+					{/* <TestDoc /> */}
 					<br />
 				</div>
 				{finalData.length > 0 ? <DisplayData /> : ''}

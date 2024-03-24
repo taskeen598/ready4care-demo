@@ -1,5 +1,6 @@
 import React from 'react';
 import { AlignmentType, Document, Table, TableCell, TableRow, Packer, Paragraph, TextRun, SymbolRun, ShadingType, BorderStyle } from "docx";
+import { Button } from '@mui/material';
 
 
 const totalChar = 40
@@ -1382,7 +1383,9 @@ const TestDoc = () => {
 
     return (
         <div>
-            <button onClick={generateDocument}>Export Data to Word</button>
+            <Button onClick={generateDocument} variant="contained" color="primary">Download</Button>
+
+            {/* <button >Export Data to Word</button> */}
         </div>
     );
 }

@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react'
 import { multiStepContext } from '../StepContext';
 import { Button, TextField, Checkbox, Radio, FormLabel, FormControlLabel, RadioGroup, FormGroup } from "@mui/material";
 import "./firststep/firststep.css";
+import TestDoc from './TestDoc';
 
 function ThirdStep() {
 
@@ -232,11 +233,12 @@ function ThirdStep() {
 
             <div style={{ marginTop: "20px", display: "flex", gap: "10px" }}>
                 <Button variant="contained" onClick={() => setCurrentStep(2)} color="secondary">Back</Button>
-                <Button variant="contained" onClick={submitData} color="primary">Submit</Button>
+                {/* <Button variant="contained" color="primary">Submit <TestDoc /></Button> */}
+                <TestDoc />
             </div>
         </div>
 
-
+        // onClick={submitData}
     )
 }
 
